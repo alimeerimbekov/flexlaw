@@ -1,0 +1,32 @@
+.home{
+  &__top{
+    margin: 40px 0;
+    display: flex;
+    column-gap: 30px;
+    &-images{
+      width: 60%;
+    }
+    &-text{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    &-title{
+      @include text(600, 22px, 150%, #173261);
+
+    }
+    &-info{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    &-litleTitle{
+      @include text(600, 16px, 150%, #173257)
+    }
+    &-desc{
+      @include text(400, 14px, 150%, #173257)
+    }
+
+  }
+}

@@ -1,0 +1,65 @@
+.commit{
+  margin: 40px;
+  &__name{
+    @include text(500, 16px, 150%, #173267);
+  }
+  &__block{
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 40px;
+  }
+  &__title{
+    @include text(600, 18px, 150%, #173267);
+
+  }
+  &__desc{
+    @include text(400, 15px, 150%, #173267);
+  }
+  &__text{
+    @include text(600, 18px, 150%, #173267);
+    margin-bottom: 20px;
+  }
+
+}
+
+.commitCard{
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  &:hover{
+    box-shadow: rgba(135, 165, 191, 0.48) 10px 5px 20px 4px, rgba(255, 255, 255, 0.8) -10px -5px 20px 4px;
+    transition: .2s;
+
+  }
+  &__prof{
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    &-icon{
+      color: #173261;
+      font-size: 50px;
+    }
+  }
+    &__admin{
+      &-name{
+        @include text(400, 14px, 150%, #173267);
+
+      }
+      &-suname{
+        @include text(400, 14px, 150%, #173267);
+      }
+    }
+  &__info{
+    &-desc{
+      @include text(600, 16px, 150%, #173267)
+    }
+
+  }
+}

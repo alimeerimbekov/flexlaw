@@ -1,0 +1,66 @@
+.petition{
+  margin-bottom: 50px;
+  &__title{
+    @include text(600, 20px, 150%, #173267);
+    margin: 20px;
+    text-align: center;
+  }
+  &__block{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: space-between;
+
+  }
+
+}
+.petitionCard{
+  &__box{
+    width: calc(50% - 15px);
+    border-radius: 4px;
+    padding: 10px;
+    background: white;
+    cursor: pointer;
+    &:hover{
+      box-shadow: rgba(135, 165, 191, 0.48) 10px 5px 20px 4px, rgba(255, 255, 255, 0.8) -10px -5px 20px 4px;
+      transition: .2s;
+    }
+
+    &-user{
+      @include text(400, 16px, 150%, #173267);
+    }
+    &-title{
+      @include text(600, 18px, 150%, #173267);
+      margin: 5px 0;
+    }
+    &-desc{
+      @include text(400, 14px, 150%, #173267);
+      margin: 20px 0;
+    }
+    &-bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-subscription{
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+    }
+    &-count{
+      @include text(400, 14px, 150%, #173267);
+
+
+    }
+    &-text{
+      @include text(600, 16px, 150%, #173267);
+      cursor: pointer;
+    }
+    &-commit{
+      @include text(600, 16px, 150%, #173267);
+      cursor: pointer;
+    }
+
+  }
+
+}

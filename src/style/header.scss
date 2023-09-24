@@ -1,0 +1,79 @@
+.header{
+  padding: 20px 0 ;
+  display: flex;
+  justify-content: space-between;
+  &__logo{
+    cursor: pointer;
+    transition: .2s;
+  }
+  &__menu{
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    &-link{
+      @include text(400, 14px, 150%, #173261);
+      cursor: pointer;
+      border: 1px solid #F1F1F1;
+      padding: 3px 8px;
+      &:hover{
+        background: #29b0cc;
+        border: 1px solid #29b0cc;
+        @include text(400, 14px, 150%, #fff);
+        padding: 3px 8px;
+        transition: .2s;
+      }
+    }
+
+
+  }
+  &__language{
+    display: flex;
+    align-content: center;
+    column-gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    &-ru, &-ky{
+      @include text(400, 14px, 150%, #173261);
+    }
+    &-active{
+      @include text(600, 14px, 150%, #173261);
+    }
+
+
+
+  }
+  &__sinign{
+    border: 1px solid #29b0cc;
+    background: #29b0cc;
+    padding: 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @include text(500, 16px, 150%, #fff);
+    border-radius: 4px;
+    &:hover{
+      background: #F1F1F1;
+      @include text(500, 16px, 150%, #173261);
+      transition: .2s;
+      border-radius: 4px;
+    }
+  }
+  &__line{
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  &__icon{
+    font-size:  40px;
+    color: #173261;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+
+
+
+}
